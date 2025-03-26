@@ -11,7 +11,7 @@
 
   <script>
     async function fetchHello() {
-      const res = await fetch('api/hello');
+      const res = await fetch('/api/hello');
       const data = await res.json();
       document.getElementById('response').innerText = data.message;
     }
