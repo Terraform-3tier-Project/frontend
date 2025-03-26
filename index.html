@@ -11,7 +11,7 @@
 
   <script>
     async function fetchHello() {
-      const res = await fetch('backend-public-alb-1465406431.ap-northeast-2.elb.amazonaws.com/api/hello');
+      const res = await fetch('http://backend-public-alb-1465406431.ap-northeast-2.elb.amazonaws.com/api/hello');
       const data = await res.json();
       document.getElementById('response').innerText = data.message;
     }
